@@ -1,3 +1,37 @@
-header{
-    border: 1px solid red;
+.header{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 60px 100px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu-link{
+    display: block;
+    padding: 10px 0;
+    color: inherit;
+    position: relative;
+}
+
+.menu-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--black);
+    position: absolute;
+    margin-top: 2px;
+    transition: width 0.3s ease-in-out;
+}
+
+.menu-link:hover::after{
+    width: 100%;
+}
+

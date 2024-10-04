@@ -3,6 +3,9 @@
 @import "./utilities/typography.css";
 @import "./utilities/colors.css";
 
+/* ---------- Components ---------- */
+@import "./components/buttons.css";
+
 /* ---------- Page styles ---------- */
 @import "./page/header.css";
 

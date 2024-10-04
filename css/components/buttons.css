@@ -1,0 +1,18 @@
+.btn{
+    max-width: max-content;
+    display: block;
+    padding: 20px 35px;
+    border-radius: 14px;
+    font: 400 20px/1.4 'Space Grotesk', Arial, sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-secondary{
+    border: 1px solid var(--dark);
+    color: var(--black);
+}
+
+.btn-secondary:hover{
+    background-color: var(--grey);
+}
+
