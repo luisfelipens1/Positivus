@@ -21,3 +21,9 @@
 .large{
     font: 400 20px/1.4 'Space Grotesk', Arial, sans-serif;
 }
+
+@media(max-width: 1200px){
+    .large{
+        font-size: 18px;
+    }
+}

@@ -16,3 +16,9 @@
     background-color: var(--grey);
 }
 
+@media(max-width: 1200px){
+    .btn{
+        padding: 16px 28px;
+        font-size: 18px;
+    }
+}
