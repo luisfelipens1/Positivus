@@ -4,6 +4,7 @@
 @import "./utilities/colors.css";
 
 /* ---------- Components ---------- */
+@import "./components/container.css";
 @import "./components/buttons.css";
 
 /* ---------- Page styles ---------- */

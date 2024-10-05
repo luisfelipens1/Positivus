@@ -1,17 +1,21 @@
 const menuMobile = document.getElementById('menu-mobile');
 const headerNav = document.querySelector('.header-nav');
 
-function activeMenu(){
-    headerNav.classList.toggle('active');
-    const headerAtivo = headerNav.classList.contains('active');
+function activeMenu(event){
+    if(event.type === 'touchstart') event.preventDefault();
 
-    if(headerAtivo){
-        menuMobile.style.color = '#FFF';
-        menuMobile.style.borderColor = '#FFF';
+    headerNav.classList.toggle('active');
+    const navActive = headerNav.classList.contains('active');
+
+    if(navActive){
+        event.currentTarget.setAttribute('aria-expanded', 'true');
+        event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
     }else{
-        menuMobile.style.color = '#000';
-        menuMobile.style.borderColor = '#000';
+        event.currentTarget.setAttribute('aria-expanded', 'false');
+        event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
     }
+    
 }
 
 menuMobile.addEventListener('click', activeMenu);
+menuMobile.addEventListener('touchstart', activeMenu);

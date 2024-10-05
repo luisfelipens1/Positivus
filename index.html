@@ -15,19 +15,24 @@
 
     <!-- <script>document.documentElement.classList.add("js");</script> -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"> -->
 </head>
 <body>
     <header>
-        <div class="header">
+        <div class="header container">
             <a href="./index.html" class="header-logo">
                 <img src="./images/logo.svg" alt="Positivus" width="220" height="36">
             </a>
-            <button class="menu-mobile" id="menu-mobile">menu</button>
+
             <nav class="header-nav">
-                <ul class="nav-menu large black">
+
+                <button class="menu-mobile" id="menu-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    <span id="menu-icon"></span>
+                </button>
+
+                <ul class="nav-menu large black" id="menu" role="menu">
                     <li class="menu-item">
                         <a href="#" class="menu-link">About Us</a>
                     </li>
