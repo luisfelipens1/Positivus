@@ -7,6 +7,15 @@
     transition: 0.3s ease-in-out;
 }
 
+.btn-primary{
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+.btn-primary:hover{
+    background-color: #272834;
+}
+
 .btn-secondary{
     border: 1px solid var(--dark);
     color: var(--black);

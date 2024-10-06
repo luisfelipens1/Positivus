@@ -15,68 +15,59 @@
 
     <!-- <script>document.documentElement.classList.add("js");</script> -->
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">-->
 </head>
 <body>
-    <header>
-        <div class="header container">
-            <a href="./index.html" class="header-logo">
-                <img src="./images/logo.svg" alt="Positivus" width="220" height="36">
-            </a>
+    <header class="header container">
+        <a href="./index.html" class="header-logo">
+            <img src="./images/logo.svg" alt="Positivus" width="220" height="36">
+        </a>
 
-            <nav class="header-nav">
+        <nav class="header-nav">
+            <button class="menu-mobile" id="menu-mobile" aria-label="Open Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="menu-icon"></span>
+            </button>
 
-                <button class="menu-mobile" id="menu-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-                    <span id="menu-icon"></span>
-                </button>
+            <ul class="nav-menu large black" id="menu" role="menu">
+                <li class="menu-item">
+                    <a href="#" class="menu-link">About Us</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Services</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Use Cases</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Pricing</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Blog</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="btn btn-secondary">Request a quote</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-                <ul class="nav-menu large black" id="menu" role="menu">
-                    <li class="menu-item">
-                        <a href="#" class="menu-link">About Us</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-link">Services</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-link">Use Cases</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-link">Pricing</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-link">Blog</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="btn btn-secondary">Request a quote</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>  
-    <!--
-    <main>
-        <div class="main-content">
-            <h1 class="main-title">Navigating the digital landscape for success</h1>
-            <p class="main-description">
-                Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.
-            </p>
-            <a href="#" class="btn btn-primary">Book a consultation</a>
-        </div>
-        <div class="main-img">
-            <img src="./images/hero.svg" alt="Lorem ipsum dolor sit amet" width="601" height="515">
-        </div>
-        <div class="companies">
-            <img src="./images/companies/amazon.svg" alt="Amazon" width="125" height="48">
-            <img src="./images/companies/dribbble.svg" alt="Dribbble" width="127" height="48">
-            <img src="./images/companies/hubspot.svg" alt="Hubspot" width="129" height="48">
-            <img src="./images/companies/netflix.svg" alt="Netflix" width="126" height="48">
-            <img src="./images/companies/notion.svg" alt="Notion" width="147" height="48">
-            <img src="./images/companies/zoom.svg" alt="Zoom" width="111" height="48">
-        </div>
-    </main>
-    -->
+    <main class="main container">
+        <h1 class="main-title heading-1 black">
+            Navigating the digital landscape for success
+        </h1>
+        <p class="main-description large black">
+            Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.
+        </p>
+        <a href="#" class="main-link btn btn-primary">Book a consultation</a>
+
+        <picture class="main-img">
+            <source media="(min-width: 992px)" srcset="./images/sections/hero-desktop.png">
+            <source media="(min-width: 576px)" srcset="./images/sections/hero-tablet.png">
+            <img src="./images/sections/hero-mobile.png" alt="Do you want to be successful in the digital environment? Call Positivus" width="601">
+        </picture>
+    </main>  
 
     <script src="./js/main.js"></script>
 </body>

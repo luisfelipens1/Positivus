@@ -1,3 +1,4 @@
+//Mobile Menu
 const menuMobile = document.getElementById('menu-mobile');
 const headerNav = document.querySelector('.header-nav');
 
@@ -9,10 +10,10 @@ function activeMenu(event){
 
     if(navActive){
         event.currentTarget.setAttribute('aria-expanded', 'true');
-        event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+        event.currentTarget.setAttribute('aria-label', 'Close Menu');
     }else{
         event.currentTarget.setAttribute('aria-expanded', 'false');
-        event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+        event.currentTarget.setAttribute('aria-label', 'Open Menu');
     }
     
 }
