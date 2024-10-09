@@ -15,9 +15,9 @@
 
     <!-- <script>document.documentElement.classList.add("js");</script> -->
 
-    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"> -->
 </head>
 <body>
     <header class="header container">
@@ -53,21 +53,121 @@
         </nav>
     </header>
 
-    <main class="main container">
-        <h1 class="main-title heading-1 black">
-            Navigating the digital landscape for success
-        </h1>
-        <p class="main-description large black">
-            Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.
-        </p>
-        <a href="#" class="main-link btn btn-primary">Book a consultation</a>
+    <main class="container">
+        <div class="main">
+            <h1 class="main-title heading-1 black">
+                Navigating the digital landscape for success
+            </h1>
+            <p class="main-description large black">
+                Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.
+            </p>
+            <a href="#" class="main-link btn btn-primary">Book a consultation</a>
 
-        <picture class="main-img">
-            <source media="(min-width: 992px)" srcset="./images/sections/hero-desktop.png">
-            <source media="(min-width: 576px)" srcset="./images/sections/hero-tablet.png">
-            <img src="./images/sections/hero-mobile.png" alt="Do you want to be successful in the digital environment? Call Positivus" width="601">
-        </picture>
-    </main>  
+            <picture class="main-img">
+                <source media="(min-width: 992px)" srcset="./images/sections/hero-desktop.png">
+                <source media="(min-width: 576px)" srcset="./images/sections/hero-tablet.png">
+                <img src="./images/sections/hero-mobile.png" alt="Do you want to be successful in the digital environment? Call Positivus" width="601">
+            </picture>
+        </div>
+        <div class="companies" aria-label="Companies that trust our work">
+            <img src="./images/companies/amazon.svg" alt="Amazon">
+            <img src="./images/companies/dribbble.svg" alt="Dribbble">
+            <img src="./images/companies/hubspot.svg" alt="Hubspot">
+            <img src="./images/companies/notion.svg" alt="Notion">
+            <img src="./images/companies/netflix.svg" alt="Netflix">
+            <img src="./images/companies/zoom.svg" alt="Zoom">
+        </div>
+    </main>
+
+    <article class="services container">
+        <div class="services-heading">
+            <h2 class="services-title heading-2 black">
+                Services
+            </h2>
+            <p class="services-description paragraph black">
+                At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:
+            </p>
+        </div>
+        <ul class="services-list">
+            <li class="service bg-grey">
+                <div class="service-content">
+                    <h3 class="service-title bg-green heading-3">Search engine<br>optimization</h3>
+                    <a href="#" class="service-link black large">
+                        <img src="./images/service-icon-dark.svg" alt="" width="41">
+                        Learn more
+                    </a>
+                </div>
+                <div class="service-img">
+                    <img src="./images/services/service-1.png" class="service-img" width="420">
+                </div>
+            </li>
+
+            <li class="service bg-green">
+                <div class="service-content">
+                    <h3 class="service-title bg-grey heading-3">Pay-per-click<br>advertising</h3>
+                    <a href="#" class="service-link black large">
+                        <img src="./images/service-icon-dark.svg" alt="" width="41">
+                        Learn more
+                    </a>
+                </div>
+                <div class="service-img">
+                    <img src="./images/services/service-2.png" class="service-img" width="420">
+                </div>
+            </li>
+
+            <li class="service bg-dark">
+                <div class="service-content">
+                    <h3 class="service-title bg-grey heading-3">Pay-per-click<br>advertising</h3>
+                    <a href="#" class="service-link white large">
+                        <img src="./images/service-icon-white.svg" alt="" width="41">
+                        Learn more
+                    </a>
+                </div>
+                <div class="service-img">
+                    <img src="./images/services/service-3.png" class="service-img" width="420">
+                </div>
+            </li>
+
+            <li class="service bg-grey">
+                <div class="service-content">
+                    <h3 class="service-title bg-green heading-3">Email<br>Marketing</h3>
+                    <a href="#" class="service-link black large">
+                        <img src="./images/service-icon-dark.svg" alt="" width="41">
+                        Learn more
+                    </a>
+                </div>
+                <div class="service-img">
+                    <img src="./images/services/service-4.png" class="service-img" width="420">
+                </div>
+            </li>
+
+            <li class="service bg-green">
+                <div class="service-content">
+                    <h3 class="service-title bg-grey heading-3">Content<br>Creation</h3>
+                    <a href="#" class="service-link black large">
+                        <img src="./images/service-icon-dark.svg" alt="" width="41">
+                        Learn more
+                    </a>
+                </div>
+                <div class="service-img">
+                    <img src="./images/services/service-5.png" class="service-img" width="420">
+                </div>
+            </li>
+
+            <li class="service bg-dark">
+                <div class="service-content">
+                    <h3 class="service-title bg-green heading-3">Analytics and<br>Tracking</h3>
+                    <a href="#" class="service-link white large">
+                        <img src="./images/service-icon-white.svg" alt="" width="41">
+                        Learn more
+                    </a>
+                </div>
+                <div class="service-img">
+                    <img src="./images/services/service-6.png" class="service-img" width="420">
+                </div>
+            </li>
+        </ul>
+    </article>
 
     <script src="./js/main.js"></script>
 </body>

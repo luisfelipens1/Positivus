@@ -18,10 +18,23 @@
 
 .main-title{
     max-width: 14ch;
+    margin-bottom: 12px;
 }
 
 .main-description{
     max-width: 39ch;
+    margin-bottom: 12px;
+}
+
+.companies{
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+    overflow-x: auto;
+}
+
+.companies img{
+    filter: grayscale(100%);
 }
 
 
